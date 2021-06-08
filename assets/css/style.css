@@ -202,7 +202,25 @@ main .banner{
 /* CSS DA SECTION DE AREAAS ESPECIFICAS*/
 
 /* Section About Us*/
-
+.section_aboutus{
+    position: relative;
+}
+.section_aboutus .phone{
+    background: var(--color-second);
+    position: absolute;
+    right: 50px;
+    top: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_aboutus .phone a{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
 .container_aboutus{
     display: flex;
 }
@@ -233,6 +251,8 @@ main .banner{
     display: flex;
 }
 .content_services{
+    display: flex;
+    flex-direction: column;
     flex: 1;
     text-align: center;
     border-right: 1px solid var(--color-desc);
@@ -506,6 +526,7 @@ li{
 .section-companies--area{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .section-company{
     flex: 1;
@@ -656,11 +677,16 @@ li{
 .Premium .area_pointer .active{
     background: var(--color-second);
 }
+
+/* Section some */
+
 .section_some{
     display: flex;
     
 }
 .section_some_item{
+    display: flex;
+    flex-direction: column;
     flex: 1;
     text-align: center;
     padding:15px;
@@ -782,6 +808,7 @@ li{
 }
 
 textarea{
+    padding: 12px 0px 0px 0px;
     height: 5px;
     margin-top: 50px;
     display: block;
@@ -810,7 +837,6 @@ textarea{
     text-transform: uppercase;
     color: rgba(0,0,0,0.5);
     font-size: 0.7rem;
-    padding: 12px 0px 0px 0px;
 }
 
 /* Section Maps */
@@ -852,4 +878,96 @@ textarea{
     font-size: 0.8rem;
     color: rgb(158, 158, 158);
     margin-left: 10px;
+}
+.section_footer{
+    position: relative;
+    padding: 20px 0px;
+}
+.up_arrow_footer{
+    position: absolute;
+    left: 30px;
+    top: -20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background: var(--color-second);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.up_arrow_footer a{
+    font-size: 2rem;
+    color: var(--bg-light);
+}
+
+.footer_area1{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+.footer_area--container{
+    display: flex;
+}
+.social_footer i{
+    font-size: 0.8rem;
+    margin-left: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 13px;
+    background: rgb(54, 54, 54);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.social_footer i:first-child{
+    margin-left: 0;
+
+}
+.social_footer i:hover{
+    background: var(--color-second);
+}
+.copy span{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.footer_area2{
+    flex: 2;
+    font-size: 0.8rem;
+    line-height: 2;
+    color: rgb(121, 121, 121);
+}
+.footer_area3{
+    flex: 1;
+    padding: 50px;
+    background: rgb(54, 54, 54);
+    margin-left: 30px;
+}
+.footer_area3 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.footer_area3 form input{
+    width: 100%;
+    padding: 10px 2px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #ccc;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+.footer_area3 form input::placeholder{
+    color: #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.7rem;
 }
